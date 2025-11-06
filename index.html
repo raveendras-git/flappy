@@ -70,7 +70,7 @@ const bird = {
   h: 60,
   gravity: 0.25,
   jump: 4.6,
-  speed: 0,
+  speed: 1,
   rotation: 0,
 
   draw() {
@@ -182,7 +182,7 @@ function updatePipes() {
   }
 
   if (pipes.length && pipes[0].x + pipeWidth < 0) pipes.shift();
-  if (frames % 150 === 0) createPipe();
+  if (frames % 250 === 0) createPipe();
 }
 
 // === Ground ===
@@ -258,3 +258,4 @@ let loaded = 0;
 </script>
 </body>
 </html>
+
